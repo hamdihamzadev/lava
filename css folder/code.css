@@ -1,0 +1,543 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+} 
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+ 
+
+
+/*-----------Rules Global-------------*/
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+@media ( min-width: 768px) {
+    .container{
+        width:750px
+    }
+}
+
+@media ( min-width: 992x) {
+    .container{
+        width:970px
+    }
+}
+
+@media ( min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+
+/*--------------------------------------START VH----------------------------------------*/
+
+.vh{
+    background-image: url(./images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    position: relative;
+
+}
+
+/*----START HEADER----*/
+.vh .header{
+    background-color: #f58263;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 56px;
+    border-radius: 0px 0px 37px 37px;
+    box-shadow: 0px 3px 20px -3px rgb(0 0 0 / 26%);
+}
+
+.vh .logo{
+    color: white;
+}
+
+.vh .header .links{
+    display: flex;
+    list-style: none;
+}
+
+.vh .header .links li a{
+    text-decoration: none;
+    margin-left: 53px;
+    color: white;
+
+}
+
+.vh .header .links li a:hover{
+    color: black;
+}
+
+/*----START SLIDE----*/
+.vh .slide{
+    position: absolute;
+    top: 50%;
+    transform: translate(-0%, -50%);
+}
+
+.vh .slide .title{
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 80px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.vh .slide .title span{
+    color: #fba70b;
+}
+
+.vh .slide .paragraphe a{
+    text-decoration: none;
+}
+
+.vh .slide .paragraphe{
+    font-weight: 300;
+    font-size: 17px;
+    color: #7a7a7a;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    margin-bottom: 40px;
+
+}
+
+.vh .slide .cta{
+    background-color: #fba70b;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.vh .slide .cta:hover{
+    background-color: black;
+}
+
+
+
+/*--------------------------------------START SERVICE----------------------------------------*/
+
+.service{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 181px 128px;
+}
+
+.service .Trend-Analysis,
+.Site-Optimization,
+.Email-Design{
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #88888824;
+    border-width: 2px;
+    padding: 37px;
+    position: relative;
+}
+
+.service .icon{
+    margin-bottom: 40px;
+
+}
+
+.service .number{
+    font-size: 100px;
+    font-weight: 600;
+    color: #fdefe9;
+    position: absolute;
+    left: 23px;
+    top: 18px;
+    z-index: -10;
+}
+
+.service .title{
+    font-size: 22px;
+    color: #1e1e1e;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-weight: 500;
+
+}
+
+.service .paragraphe{
+    font-size: 15px;
+    line-height: 25px;
+    color: #888;
+
+}
+
+.service a{
+    display: inline-block;
+    margin-top: 35px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    padding: 15px 25px;
+    background-color: #f4813f;
+    text-decoration: none;
+    
+}
+
+.service a:hover{
+    background-color: black;
+}
+
+
+/*--------------------------------------START ADVANTAGES----------------------------------------*/
+.advantages{
+    margin: 0px 184px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 181px;
+}
+
+
+
+/*-----------THREE ADVANTAGES---------------*/
+
+.advantages .adv-1,
+.adv-2,
+.adv-3{
+    display: flex;
+    margin-left: 130px;
+}
+
+.advantages .icon{
+    height: 100px;
+}
+
+.advantages .three-adv .text{
+    margin-left: 37px;
+    margin-bottom: 60px;
+    font-weight: 450;
+}
+
+.advantages .three-adv .text .title{
+    margin-top: 0;
+    font-size: 22px;
+    color: #1e1e1e;
+    margin-bottom: 15px;
+
+}
+
+.advantages .three-adv .text .paragraphe{
+    font-size: 15px;
+    line-height: 25px;
+    color: #888;
+    
+}
+
+.advantages .three-adv .text .paragraphe a{
+    text-decoration: none;
+}
+
+
+/*--------------------------------------START REVIEWS----------------------------------------*/
+
+.reviews{
+    text-align: center;
+    margin-bottom: 181px;
+
+}
+
+.reviews .heading{
+    margin-bottom:106px ;
+}
+
+.reviews .heading .title{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-bottom: 25px;
+
+}
+
+.reviews .heading .substitle{
+    font-size: 15px;
+    color: #727171;
+    line-height: 1.6;
+
+}
+
+/*---comments---*/
+
+.reviews .comments{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 184px;
+    
+}
+
+.reviews .comments .commment-1,
+.commment-2{
+    background: linear-gradient(145deg, rgba(244,129,63,1) 0%, rgba(241,85,106,1) 100%);
+    position: relative;
+    padding: 71px 12px;
+    border-radius: 12px;
+
+}
+
+.reviews .comments .photo{
+    position: absolute;
+    left: -68px;
+    top: -70px;
+}
+
+.reviews .comments .start{
+    width: 75px;
+    height: 12px;
+    display: block;
+    margin: 0px auto;
+}
+
+
+.reviews .comments .name{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 21px;
+    margin-bottom: 30px;
+
+}
+
+
+.reviews .comments .comment{
+    color: #fff;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 1.6;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    margin-bottom: 30px;
+}
+
+.reviews .comments .profession{
+    color: #fff;
+    font-weight: 200;
+    font-size: 13px;
+    
+}
+
+/*--------------------------------------START FOOTER----------------------------------------*/
+
+.footer{
+    background-image: url(./images/footer-bg.png);
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.footer .parte-1{
+    display: flex;
+    margin-left: 184px;
+    margin-right: 184px;
+}
+
+
+.footer .forum{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 45px;
+    border-radius: 10px;
+    margin-top: 124px;
+    
+}
+
+.footer .forum .nam-email{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.footer .forum .nam-email .E-mail{
+    margin-left:21px ;
+
+}
+
+
+.footer .forum .nam-email .Full-name,
+.E-mail{
+    height: 44px;
+    border-radius: 4px;
+    padding-left: 17px;
+
+}
+
+.footer .forum .Full-name,
+.E-mail,
+.message{
+    border-radius: 6px;
+    border-style: solid;
+    border-color: #0000001c;
+    border-width: 2px;
+  
+
+}
+
+.footer .forum .message{
+    height: 157px;
+    MARGIN-BOTTOM: 40px;
+    padding-left: 17px;
+    padding-bottom: 100px;
+
+}
+
+.footer .forum .cta{
+    display: block;
+    padding: 15px 9px;
+    background-color: #f4813f;
+    border-style: none;
+    width: 43%;
+    margin: 0px auto;
+    border-radius: 57px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.footer .forum .cta:hover{
+    background-color: black;
+}
+
+.footer .forum ::placeholder{
+    font-size: 14px;
+    
+}
+
+/*----.about-lava---*/
+
+.about-lava{
+    margin-top: 147px;
+    margin-left: 36px;
+}
+
+
+.about-lava .title{
+    margin-bottom: 34px;
+    color: white;
+}
+
+.about-lava .title span{
+    color: #fba70b;
+}
+
+.about-lava .paragraphe-1{
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 21px;
+    color: white;
+}
+
+.about-lava .paragraphe-2{
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+}
+
+.about-lava .social-media{
+    display: inline-flex;
+    margin-top: 24px;
+}
+
+.about-lava .social-media .icon{
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+   
+    
+}
+
+.about-lava .social-media .icon:hover{
+    background-color: #fba70b;
+    border: none;
+}
+
+.about-lava .social-media i{
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+}
+
+.footer .parte-2 .line{
+    height: 1px;
+    margin: 30px 128px;
+    background-color: #ebebeb4d;
+    margin-top: 101px;
+    margin-left: 184px;
+    margin-right: 184px;
+    margin-bottom: 41px;
+
+}
+
+.footer .parte-2 .copy{
+    color: white;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.7;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
